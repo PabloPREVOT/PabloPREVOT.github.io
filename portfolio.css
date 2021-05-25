@@ -9,7 +9,7 @@
 
 #bloc_page
 {
-    padding: 0 20px 20px 20px;
+    padding: 0 100px 20px 100px;
 }
 
 body
@@ -33,7 +33,23 @@ hr
 {
     color: rgb(179, 168, 168);
     background-color: rgb(179, 168, 168);
-    width: 500px;
+    width: 40%;
+}
+
+.hr_left
+{
+    margin: 50px 0 50px -100px;
+}
+
+.hr_right
+{
+    float: right;
+    margin: 50px -100px 50px 0;
+}
+
+.clear_float_hr
+{
+    clear: right;
 }
 
 /*Header*/
@@ -44,11 +60,18 @@ hr
     object-fit: cover;
 }
 
+h1
+{
+    margin-bottom: 50px;
+}
+
 #div_intro
 {
     text-align: center;
-    border: 1px solid rgb(179, 168, 168);
+    border: 2px solid rgb(179, 168, 168);
     margin: 10px 0;
+    background-color: black;
+    border-radius: 10px;
 }
 
 #div_intro ul
@@ -59,10 +82,9 @@ hr
     align-items: center;
 }
 
-#hr_header
+header a:hover
 {
-    position: relative;
-    top: -5px;
+    color: rgb(141, 235, 238);
 }
 
 #img_dev
@@ -70,4 +92,8 @@ hr
     width: 80%;
     height: 300px;
     border-radius: 5px;
+    margin-bottom: 100px;
 }
+
+/*Section*/
+
