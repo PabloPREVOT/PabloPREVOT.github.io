@@ -1,0 +1,237 @@
+/*Général*/
+*
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+#bloc_page
+{
+    padding: 0 100px 20px 100px;
+}
+
+body
+{
+    background-color: rgb(48, 46, 46);
+    color: rgb(185, 179, 179);
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    color: rgb(185, 179, 179);
+    text-decoration: none;
+}
+
+hr
+{
+    color: rgb(179, 168, 168);
+    background-color: rgb(179, 168, 168);
+    width: 40%;
+}
+
+.hr_left
+{
+    margin: 50px 0 50px -100px;
+}
+
+.hr_right
+{
+    float: right;
+    margin: 50px -100px 50px 0;
+}
+
+.clear_float_hr
+{
+    clear: right;
+}
+
+h1, h2
+{
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+/*Header-img*/
+
+.img_header/*Les 2 premières images*/
+{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*Header*/
+
+.bloc_intro
+{
+    text-align: center;
+    border: 2px solid rgb(179, 168, 168);
+    margin: 10px 0;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.bloc_intro ul
+{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header a:hover
+{
+    color: rgb(141, 235, 238);
+}
+
+.img_dev/*2nd image*/
+{
+    width: 80%;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 100px;
+    display: inline;
+}
+
+/*Section1*/
+
+.title_a_propos + div
+{
+    margin-bottom: 50px;
+}
+
+.bloc_competences
+{
+    background-image: url(images/bg_old_white.png);
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+}
+
+#title_a_propos, #bloc_competences h2
+{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid black;
+}
+
+#title_experience + p
+{
+    margin-bottom: 20px;
+}
+
+.bloc_maitrise
+{
+    display: flex;
+}
+
+.langages, .outils
+{
+    margin-right: 25px;
+}
+
+h4
+{
+    margin-bottom: 10px;
+}
+
+/*Section2*/
+
+.bloc_title-projet
+{
+    border: 2px solid rgb(179, 168, 168);
+    background-image: url(images/bg_grey2.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#title_mes_projets
+{
+    margin: 20px;
+    color: rgb(48, 46, 46);
+}
+
+.bloc_projet
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bloc_projet div
+{
+    width: 25%;
+}
+
+figure
+{
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+figcaption
+{
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+}
+
+.img_project
+{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    background-color: white;
+    display: block;
+}
+
+/*Footer*/
+
+footer
+{
+    text-align: center;
+}
+
+.contact_link
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.far, .fab
+{
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.far
+{
+    padding: 10px;
+}
+
+.fab
+{
+    padding: 10px 11px;
+}
+
+.far:hover, .fab:hover
+{
+    background-color: white;
+    color: black;
+}
