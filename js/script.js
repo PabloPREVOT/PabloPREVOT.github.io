@@ -1,3 +1,30 @@
+// ********************************************************************************************
+// Script h1 et slogan apparition
+// ********************************************************************************************
+
+// Delais fixer en css -> changement au début de la page
+// opacity 0 -> 1
+// left 150px -> 0
+
+$h1_span = document.querySelectorAll("h1 span"); // Récupération de tout les span du h1
+
+for(let $i = 0; $i < $h1_span.length; $i++) {
+    $h1_span[$i].style.opacity = "1";
+    $h1_span[$i].style.left = "0";
+}
+
+$slogan_p = document.querySelector("h1+p"); // paragraphe/slogan sous le h1
+
+$slogan_p.style.opacity = "1";
+$slogan_p.style.left = "0";
+
+// ********************************************************************************************
+// Script barre de compétence
+// ********************************************************************************************
+
+// Lorsque on scroll assez dans la page pour arriver sur les compétences
+// width 10% -> chamgement celon la barre
+
 $barre_a = document.querySelector(".barre_pourcent.competence_a");
 $barre_b = document.querySelector(".barre_pourcent.competence_b");
 $barre_c = document.querySelector(".barre_pourcent.competence_c");
