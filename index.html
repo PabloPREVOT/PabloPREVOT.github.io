@@ -1,133 +1,251 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-	    <meta charset="utf-8">
-        <script src="https://kit.fontawesome.com/ba53f47b74.js" crossorigin="anonymous"></script>
-	    <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio PREVOT Pablo</title>
-    </head>
-    <body>
-        <p><img src="images/mini_ball_binaire.jpg" alt="boule binaire" class="img_header"/></p>
-        <hr class="hr_left">
-        <div id="bloc_page">
-            <header>
-                <h1>Mon portefolio</h1>
-                <div class="bloc_intro">
-                    <nav>
-                        <ul>
-                            <li><a href="#title_a_propos">A propos de moi</a></li>
-                            <li><a href="#bloc_competences">Compétences</a></li>
-                            <li><a href="#title_mes_projets">Mes projets</a></li>
-                            <li><a href="#title_me_contacter">Me contacter</a></li>
-                        </ul>
-                    </nav>
-                    <p><img src="images/developpeur_mini.jpg" alt="developpeur" class="img_header img_dev"/></p><!--Autre img de présentation-->
-                </div>
-            </header>
-            <hr class="hr_right">
-            <section class="clear_float_hr bloc_competences">
-                <div>
-                    <h2 id="title_a_propos" class="title_a_propos">A propos de moi</h2>
-                    <div>
-                        <p>
-                            Je suis développeur web qui vient de se reconvertir profesionnellement, j'ai eu de nombreuse expérience dans différent domaine, 
-                            j'ai fait des études technologique de laboratoire ( Baccalauréat STL BGB ) puis j'ai cherché ma voie, BTS Hygiène Sécurité Environnement,
-                            Art plastique, j'ai travaillé dans une entreprise de chimie pendant 3ans lors de mes études pour finalement me lancer dans mon rêve de Pompier de Paris.
-                            ... A suivre
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div id="bloc_competences">
-                        <h2 id="title_experience">Expérience Front-end</h2>
-                        <p>
-                             Ma soif d'apprendre est ma plus grande force !
-                        </p>
-                        <div class="bloc_maitrise">
-                            <div class="langages">
-                                <h4>Langages maitrisés</h4>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                            </div>
-                            <div class="outils">
-                                <h4>Outils maitrisés</h4>
-                                <ul>
-                                    <li>Visual Studio Code</li>
-                                    <li>GitHub</li>
-                                    <li>Terminal</li>
-                                    <li>Sass</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <hr class="hr_left">
-            <section>
-                <div class="bloc_title-projet">
-                    <h2 id="title_mes_projets">Mes projets</h2>
-                    <div class="bloc_projet">
-                        <div>
-                            <a href="#">
-                                <figure>
-                                    <img class="img_project" src="images/Reservia.png" alt="Site Reservia"/>
-                                    <figcaption>
-                                        <p>Premier projet<br>Intégration d'une maquette d'un site de réservation</p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <figure>
-                                    <img class="img_project" src="images/work_icon.png" alt="work in progress"/>
-                                    <figcaption>
-                                        <p>Deuxième projet</p>
-                                    </figcaption>                                
-                                </figure>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <figure>
-                                    <img class="img_project" src="images/work_icon.png" alt="work in progress"/>
-                                    <figcaption>
-                                        <p>Troisième projet</p>
-                                    </figcaption>                                
-                                </figure>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <figure>
-                                    <img class="img_project" src="images/work_icon.png" alt="work in progress"/>
-                                    <figcaption>
-                                        <p>Quatrième projet</p>
-                                    </figcaption>                                
-                                </figure>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <hr class="hr_right">
-            <footer class="clear_float_hr">
-                <div>
-                    <div>
-                         <h2 id="title_me_contacter">Contacts</h2>
-                        <p>Je suis en recherche d'alternance !<br>N'hésitez pas à me contacter !</p>
-                    </div>
-                    <div class="contact_link">
-                        <p><a href="#"><i class="far fa-envelope"></i></a></p>
-                        <p><a href="#"><i class="fab fa-linkedin-in"></i></a></p>
-                    </div>
-                </div>
-            </footer>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/ba53f47b74.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio PREVOT Pablo</title>
+    <meta name="description" content="Mon portefolio, mes projets, mes compétences et mes contactes">
+    <meta name="author" content="John Doe">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Pour le favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- Pour Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="bg-light d-flex flex-column justify-content-center align-items-center bg-img text-light w-100">
+            <h1>Mon portefolio</h1>
+            <p>Bienvenue sur mon site !</p>
         </div>
-    </body>
+
+    </header>
+
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+            <ul class="navbar-nav w-75 d-flex justify-content-around">
+                <li class="nav-item">
+                    <a class="nav-link" href="#portefolio">Portefolio</a>
+                </li>
+                <li class="nav-item">
+                    <p class="nav-link icon"><i class="fas fa-circle-notch"></i></p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#competences">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <p class="nav-link icon"><i class="fas fa-circle-notch"></i></p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#a_propos">A propos de moi</a>
+                </li>
+                <li class="nav-item">
+                    <p class="nav-link icon"><i class="fas fa-circle-notch"></i></p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="container mt-5">
+            <div class="div_ancre" id="portefolio"></div>
+            <h2 class="text-center mb-5">Portefolio</h2>
+            <div class="row justify-content-around">
+                <div class="card col mx-3">
+                    <div
+                        class="card-body-head bg-light d-flex flex-column justify-content-center align-items-center p-2">
+                        <h3>Nom projet</h3>
+                        <p>type de projet</p>
+                    </div>
+                    <img src="images/work_icon.png" class="card-img-top bg-dark" alt="#">
+                    <div class="card-body bg-light">
+                        <p class="card-text">Explication du projet et techno utilisé</p>
+                    </div>
+                </div>
+                <div class="card col mx-3">
+                    <div
+                        class="card-body-head bg-light d-flex flex-column justify-content-center align-items-center p-2">
+                        <h3>Nom projet</h3>
+                        <p>type de projet</p>
+                    </div>
+                    <img src="images/work_icon.png" class="card-img-top bg-dark" alt="#">
+                    <div class="card-body bg-light">
+                        <p class="card-text">Explication du projet et techno utilisé</p>
+                    </div>
+                </div>
+                <div class="card col mx-3">
+                    <div
+                        class="card-body-head bg-light d-flex flex-column justify-content-center align-items-center p-2">
+                        <h3>Nom projet</h3>
+                        <p>type de projet</p>
+                    </div>
+                    <img src="images/work_icon.png" class="card-img-top bg-dark" alt="#">
+                    <div class="card-body bg-light">
+                        <p class="card-text">Explication du projet et techno utilisé</p>
+                    </div>
+                </div>
+                <div class="card col mx-3">
+                    <div
+                        class="card-body-head bg-light d-flex flex-column justify-content-center align-items-center p-2">
+                        <h3>Nom projet</h3>
+                        <p>type de projet</p>
+                    </div>
+                    <img src="images/work_icon.png" class="card-img-top bg-dark" alt="#">
+                    <div class="card-body bg-light">
+                        <p class="card-text">Explication du projet et techno utilisé</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around mt-5">
+                <div class="card col mx-3">
+                    <div
+                        class="card-body-head bg-light d-flex flex-column justify-content-center align-items-center p-2">
+                        <h3>Nom projet</h3>
+                        <p>type de projet</p>
+                    </div>
+                    <img src="images/work_icon.png" class="card-img-top bg-dark" alt="#">
+                    <div class="card-body bg-light">
+                        <p class="card-text">Explication du projet et techno utilisé</p>
+                    </div>
+                </div>
+                <div class="card col mx-3">
+                    <div
+                        class="card-body-head bg-light d-flex flex-column justify-content-center align-items-center p-2">
+                        <h3>Nom projet</h3>
+                        <p>type de projet</p>
+                    </div>
+                    <img src="images/work_icon.png" class="card-img-top bg-dark" alt="#">
+                    <div class="card-body bg-light">
+                        <p class="card-text">Explication du projet et techno utilisé</p>
+                    </div>
+                </div>
+                <div class="card col mx-3">
+                    <div
+                        class="card-body-head bg-light d-flex flex-column justify-content-center align-items-center p-2">
+                        <h3>Nom projet</h3>
+                        <p>type de projet</p>
+                    </div>
+                    <img src="images/work_icon.png" class="card-img-top bg-dark" alt="#">
+                    <div class="card-body bg-light">
+                        <p class="card-text">Explication du projet et techno utilisé</p>
+                    </div>
+                </div>
+                <div class="card col mx-3">
+                    <div
+                        class="card-body-head bg-light d-flex flex-column justify-content-center align-items-center p-2">
+                        <h3>Nom projet</h3>
+                        <p>type de projet</p>
+                    </div>
+                    <img src="images/work_icon.png" class="card-img-top bg-dark" alt="#">
+                    <div class="card-body bg-light">
+                        <p class="card-text">Explication du projet et techno utilisé</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5">
+            <div class="div_ancre" id="competences"></div>
+            <h2 class="text-center mb-5">Compétences</h2>
+            <div class="row">
+                <div class="barre_competence mb-3">
+                    <div class="barre_title competence_a"><span><i class="fab fa-html5"></i> HTML5</span></div>
+                    <div class="barre_pourcent competence_a"></div>
+                    <div class="nbr_pourcent">90%</div>
+                </div>
+                <div class="barre_competence mb-3">
+                    <div class="barre_title competence_b"><span><i class="fab fa-css3-alt"></i> CSS3</span></div>
+                    <div class="barre_pourcent competence_b"></div>
+                    <div class="nbr_pourcent">85%</div>
+                </div>
+                <div class="barre_competence mb-3">
+                    <div class="barre_title competence_c"><span><i class="fab fa-bootstrap"></i> Bootstrap</span></div>
+                    <div class="barre_pourcent competence_c"></div>
+                    <div class="nbr_pourcent">50%</div>
+                </div>
+                <div class="barre_competence mb-3">
+                    <div class="barre_title competence_d"><span>Js/jQuerie</span></div>
+                    <div class="barre_pourcent competence_d"></div>
+                    <div class="nbr_pourcent">65%</div>
+                </div>
+                <div class="barre_competence mb-3">
+                    <div class="barre_title competence_e"><span><i class="fab fa-php"></i> PHP</span></div>
+                    <div class="barre_pourcent competence_e"></div>
+                    <div class="nbr_pourcent">80%</div>
+                </div>
+                <div class="barre_competence mb-3">
+                    <div class="barre_title competence_f"><span><i class="fab fa-angular"></i> Angular</span></div>
+                    <div class="barre_pourcent competence_f"></div>
+                    <div class="nbr_pourcent">0%</div>
+                </div>
+                <div class="barre_competence mb-3">
+                    <div class="barre_title competence_g"><span><i class="fab fa-symfony"></i> Symphony</span></div>
+                    <div class="barre_pourcent competence_g"></div>
+                    <div class="nbr_pourcent">0%</div>
+                </div>
+                <div class="barre_competence mb-3">
+                    <div class="barre_title competence_h"><span><i class="fab fa-wordpress"></i> Wordpress</span></div>
+                    <div class="barre_pourcent competence_h"></div>
+                    <div class="nbr_pourcent">50%</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5">
+            <div class="div_ancre" id="a_propos"></div>
+            <h2 class="text-center mb-5">A propos de moi</h2>
+            <div class="row d-flex justify-content-center flex-wrap-wrap">
+                <div class="w-50 container-text-propos">
+                    <p class="text-center p-5">
+                        <strong>Développeur débutant :</strong><br>
+                        Passionner par le web depuis quelques années, je me forme aux 
+                        développement web au sein de l'école Webforce 3 à Paris.<br>
+                        Je cherche une première expérience lors d'un stage ou d'une alternance ! 
+                        N'hésitez pas à me <a href="#">contacter</a> !
+                    </p>
+                </div>
+                <div class="w-50 container-text-propos">
+                    <p class="text-center p-5">
+                        <strong>Je suis curieu de nature :</strong><br>
+                        J'aime découvrir de nouvelle chose pour me challenger !<br>
+                        Mon atout principal ? Ma soif d'apprendre et ma motivation !
+                    </p>
+                </div>
+                <div class="w-100 container-text-propos">
+                    <p class="text-center mt-5 p-5">
+                        En dehors du développement web, j'adore lire et jouer à des jeux vidéos (principalement stragtégie et rogue like),<br> 
+                        mais aussi beaucoup de sport depuis mon enfance (trés divers).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pour Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
