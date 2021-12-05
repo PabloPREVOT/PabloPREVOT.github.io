@@ -16,7 +16,7 @@ for(let $i = 0; $i < $h1_span.length; $i++) {
 $slogan_p = document.querySelector("h1+p"); // paragraphe/slogan sous le h1
 
 $slogan_p.style.opacity = "1";
-$slogan_p.style.left = "0";
+$slogan_p.style.right = "0";
 
 // ********************************************************************************************
 // Script barre de compétence

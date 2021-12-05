@@ -8,6 +8,8 @@
                                                 @Main
                                                     @Portfolio
                                                     @Competences
+                                                    @A propos
+                                                    @Contact
 --------------------------------------------------------------------------------------------------------                                                
 ------------------------------------------------------------------------------------------------------*/
 
@@ -24,18 +26,39 @@ p{
     margin-bottom: 0 !important;
 }
 
-h3{
-    font-size: 1rem !important;
-    margin: 0 !important;
+h1 {
+    font-size: 80px !important;
+    font-family: 'Satisfy', sans-serif;
+}
+
+h1 + p{
+    font-size: 30px !important;
+    font-family: 'Satisfy', sans-serif;
 }
 
 h2 {
     font-size: 60px !important;
     font-family: 'Satisfy', sans-serif;
+    margin-bottom: 0 !important;
+}
+
+h2 + p{
+    color: grey;
+    font-size: 30px;
+    font-family: 'Satisfy', sans-serif;
+}
+
+h3{
+    font-size: 1rem !important;
+    margin: 0 !important;
 }
 
 .div_ancre {
     height: 60px;
+}
+
+.separation {
+    border-bottom: 1px solid rgba(255,255,255,.55);
 }
 
 /* *****************************************************************************************************
@@ -51,7 +74,7 @@ h2 {
 
 h1 + p {
     position: relative;
-    left: 150px;
+    right: 150px;
     opacity: 0;
     transition: all 2s ease-out 0.5s;
 }
@@ -114,7 +137,52 @@ ul i {
 
 ul i:hover {
     transform: rotate(180deg);
-    color: red;
+    color: rgb(0, 191, 255);
+}
+
+.nav-item-decoration {
+    display: block;
+    color: rgba(255,255,255,.55);
+    padding: 0.5rem 1rem;
+}
+
+.nom {
+    position: relative;
+    padding: 0.5rem 1rem !important;
+}
+
+.nom::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 20%;
+    height: 20%;
+    border-top: 2px solid rgb(0, 191, 255);
+    border-left: 2px solid rgb(0, 191, 255);
+    transition: all 1s;
+}
+
+.nom:hover::before {
+    width: 90%;
+    height: 90%;
+}
+
+.nom::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    width: 20%;
+    height: 20%;
+    border-bottom: 2px solid rgb(0, 191, 255);
+    border-right: 2px solid rgb(0, 191, 255);
+    transition: all 1s;
+}
+
+.nom:hover::after {
+    width: 90%;
+    height: 90%;
 }
 
 /* *****************************************************************************************************
@@ -146,7 +214,7 @@ img{
 .barre_competence {     /* Barre complète */
     width: 100%;
     height: 35px;
-    background-color: rgb(134, 127, 127);
+    background-color: grey;
     border-radius: 5px;
     position: relative;
     padding: 0 !important;
@@ -236,18 +304,27 @@ img{
 }
 
 /* *****************************************************************************************************
-                                                @Competences
+                                                @A propos
 ***************************************************************************************************** */
 
 .container-text-propos {
     border: 1px solid white;
     background-color: black;
+}
+
+.container-text-propos strong {
     color: white;
 }
 
-.container-text-propos p {
-    vertical-align: middle;
+.container-text-propos span{
+    color: rgba(255,255,255,.55);
 }
 
+.container-text-propos span a{
+    text-decoration: none;
+    color: rgb(0, 191, 255);
+}
 
-
+/* *****************************************************************************************************
+                                                @Contact
+***************************************************************************************************** */
