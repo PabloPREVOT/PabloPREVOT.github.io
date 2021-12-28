@@ -122,6 +122,31 @@ h1 span.o4 {
     transition: all 2.1s ease-out 0.5s;
 }
 
+/* ************************************************
+                    @Media
+************************************************ */
+@media screen and (max-width: 768px){
+    header div {
+        height: 200px !important;
+    }
+    h1{
+        font-size: 50px !important;
+    }
+    h1 + p {
+        font-size: 20px !important;
+    }
+}
+@media screen and (max-width: 576px){
+    header div {
+        height: 150px !important;
+    }
+    h1{
+        font-size: 40px !important;
+    }
+    h1 + p {
+        font-size: 15px !important;
+    }
+}
 
 /* *****************************************************************************************************
                                                 @Nav
@@ -185,12 +210,51 @@ ul i:hover {
     height: 90%;
 }
 
+/* ************************************************
+                    @Media
+************************************************ */
+
+@media screen and (max-width: 992px){
+    ul.w-75 {
+        width: 100% !important;
+    }
+    .nom::before, .nom::after {
+        display: none;
+    }
+    .nom, .nav-link{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .nav-item-decoration {
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    ul li.i {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .nom, ul li a, ul li.decoration p {
+        padding: 0 !important;
+    }
+    ul {
+        font-size: 10px;
+    }
+}
+
 /* *****************************************************************************************************
                                                 @Main
 ***************************************************************************************************** */
 /* *****************************************************************************************************
                                                 @Portfolio
 ***************************************************************************************************** */
+
+.container_ {
+    width: 90%;
+}
 
 .card{
     padding: 0 !important;
@@ -205,6 +269,23 @@ img{
 
 .card-img, .card-img-top {
     border-radius: 0 !important;
+}
+
+/* ************************************************
+                    @Media
+************************************************ */
+
+@media screen and (max-width: 992px){
+    .card.col {
+        flex: none;
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .card.col {
+        width: 100%;
+    }
 }
 
 /* *****************************************************************************************************
@@ -287,20 +368,21 @@ img{
     width: 10%;
     transition: 2s 1.7s;
 }
-.barre_pourcent.competence_f {      /* Barre 6 || Compétence 6 */
+/* 
+.barre_pourcent.competence_f {      
     background-color: rgb(72, 206, 211);
     width: 10%;
     transition: 2s 2s;
-}
-.barre_pourcent.competence_g {      /* Barre 7 || Compétence 7 */
+} 
+.barre_pourcent.competence_g {      
     background-color: rgb(8, 8, 5);
     width: 10%;
     transition: 2s 2.3s;
-}
+} */
 .barre_pourcent.competence_h {      /* Barre 8 || Compétence 8 */
     background-color: rgb(119, 1, 99);
     width: 10%;
-    transition: 2s 2.6s;
+    transition: 2s 2s; /* 2.6s de delai quand les 2 autres barre seront ajouté */
 }
 
 /* *****************************************************************************************************
@@ -328,3 +410,17 @@ img{
 /* *****************************************************************************************************
                                                 @Contact
 ***************************************************************************************************** */
+
+.contact_div div{
+    width: 10%;
+    height: 100%;
+}
+
+.contact_div i {
+    font-size: 35px;
+    color: black;
+}
+
+.contact_div i:hover{
+    color: rgb(0, 191, 255);;
+}
